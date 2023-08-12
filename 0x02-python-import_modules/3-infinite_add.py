@@ -14,4 +14,4 @@ if __name__ == "__main__":
             if i > 0:
                 temp = temp + int(sys.argv[i])
 
-    print(f"{temp}\n")
+    print(f"{temp}")
