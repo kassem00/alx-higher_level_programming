@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# 0_add.py
-
 def add(a, b):
     """My addition function
 
