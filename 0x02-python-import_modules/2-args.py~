@@ -1,0 +1,6 @@
+if __name__ == "__main__":
+    import sys
+        fib(int(sys.argv[1]))
+a = ['Mary', 'had', 'a', 'little', 'lamb']
+for i in range(len(a)):
+    print(i, argv[i])
