@@ -7,4 +7,4 @@ def fun():
 	"""loop through arguments"""
 	for i in range(len(sys.argv)):
             if i > 0:
-                print(i, sys.argv[i])
+                print(f"{i}: {sys.argv[i]}")
