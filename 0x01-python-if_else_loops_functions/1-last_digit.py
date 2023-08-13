@@ -11,7 +11,13 @@ if the last digit is less than 6 and not 0:
 the string and is less than 6 and not 0
 followed by a new line
 '''
-rand_str = str(number);
+rand_str = str(number)
 
-if int(rand_str[-1]) == 5:
-    print("Last digit of ".number." is".rand_str[-1]." and is greater than 5")
+if int(rand_str[-1]) > 5:
+    print("Last digit of", number, "is", rand_str[-1],
+          "and is greater than 5")
+elif int(rand_str[-1]) == 0:
+    print("Last digit of", number, "is", rand_str[-1], "and is 0")
+elif (int(rand_str[-1]) < 6) and (int(rand_str[-1]) > 0):
+    print("Last digit of", number, "is", rand_str[-1],
+          "and is less than 6 and not 0")
