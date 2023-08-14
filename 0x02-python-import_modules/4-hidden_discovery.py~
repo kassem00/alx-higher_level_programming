@@ -1,0 +1,13 @@
+import dis
+
+def print_module_names(module):
+    code = module.__code__
+    names = code.co_names
+    sorted_names = sorted(set(names))
+    for name in sorted_names:
+        if not name.startswith('__'):
+            print(name)
+
+if __name__ == "__main__":
+    import hidden_4
+    print_module_names(hidden_4)
