@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+def no_c(my_string):
+    new_str = my_string
+    leng = len(new_str) - 1
+    for i in range(leng):
+        if (new_str[i] == 'c') or (new_str[i] == 'C'):
+           new_str[i] = ''
+    return new_str
