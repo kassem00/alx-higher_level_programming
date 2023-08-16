@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    str_var = '' + my_string
-    str_var = my_string.lstrip('c')
-    str_var = my_string.lstrip('C')
-    str_var = my_string.strip('c')
-    str_var = my_string.strip('C')
-    str_var = my_string.rstrip('c')
-    str_var = my_string.rstrip('C')
-    return str_var
+    new_str = ''
+    for i in range(len(my_string)):
+        if my_string[i] == 'c' or my_string[i] == 'C':
+            continue
+        else:
+            new_str += my_string[i]
+    return new_str
