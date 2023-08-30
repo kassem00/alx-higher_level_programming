@@ -5,7 +5,7 @@
 class Square:
     'print(__import__("my_module").my_function.__doc__)'
     def __init__(self, size=0):
-        self.size
+        self.size = size
 
     @property
     def size(self):
