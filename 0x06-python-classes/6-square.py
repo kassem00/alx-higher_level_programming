@@ -4,8 +4,9 @@
 
 class Square:
     'print(__import__("my_module").my_function.__doc__)'
-    def __init__(self, size=0):
-        self.size = size
+     def __init__(self, size=0, position=(0, 0)):
+         self.size = size
+         self.position = position
 
     @property
     def size(self):
