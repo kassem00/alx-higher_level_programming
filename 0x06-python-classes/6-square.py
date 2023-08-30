@@ -4,9 +4,10 @@
 
 class Square:
     'print(__import__("my_module").my_function.__doc__)'
-     def __init__(self, size=0, position=(0, 0)):
-         self.size = size
-         self.position = position
+    def __init__(self, size=0, position=(0, 0)):
+
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -34,7 +35,13 @@ class Square:
             [print("#", end="") for k in range(0, self.__size)]
             print("")
 
+    @property
     def position(self):
+        """Get/set the current position of the square."""
+        return (self.__position)
+
+    @position.setter
+    def position(self, value):
         if (type(value) != tuple or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
