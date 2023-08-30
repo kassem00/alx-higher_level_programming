@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define class square"""
+'print(__import__("my_module").my_function.__doc__)'
 class Square:
-"""class square"""
+    'print(__import__("my_module").my_function.__doc__)'
     pass
