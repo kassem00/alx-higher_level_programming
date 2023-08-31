@@ -2,6 +2,7 @@
 'print(__import__("my_module").my_function.__doc__)'
 
 
+
 class Node:
     'print(__import__("my_module").my_function.__doc__)'
     def __init__(self, data, next_node=None):
@@ -15,7 +16,7 @@ class Node:
 
     @data.setter
     def data(self, value):
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
 
@@ -25,7 +26,7 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if type(value) != int and value is not None:
+        if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
@@ -58,3 +59,4 @@ class SinglyLinkedList:
             values.append(str(temp.data))
             temp = temp.next_node
         return ('\n'.join(values))
+
