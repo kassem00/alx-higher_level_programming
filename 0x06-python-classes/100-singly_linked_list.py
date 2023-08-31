@@ -2,7 +2,6 @@
 'print(__import__("my_module").my_function.__doc__)'
 
 
-
 class Node:
     'print(__import__("my_module").my_function.__doc__)'
     def __init__(self, data, next_node=None):
@@ -59,4 +58,3 @@ class SinglyLinkedList:
             values.append(str(temp.data))
             temp = temp.next_node
         return ('\n'.join(values))
-
