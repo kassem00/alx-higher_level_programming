@@ -28,3 +28,33 @@ class Node:
         if type(value) != int and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
+
+class SinglyLinkedList:
+    'print(__import__("my_module").my_function.__doc__)'
+    def __init__(self):
+        self.__head = None
+
+    def sorted_insert(self, value):
+        new = Node(value)
+        if self.__head is None:
+            new.next_node = None
+            self.__head = new
+        elif self.__head.data > value:
+            new.next_node = self.__head
+            self.__head = new
+        else:
+            tmp = self.__head
+            while (temp.next_node is not None and
+                    temp.next_node.data < value):
+                temp = temp.next_node
+            new.next_node = temp.next_node
+            tmp.next_node = new
+
+    def __str__(self):
+        values = []
+        temp = self.__head
+        while temp is not None:
+            values.append(str(temp.data))
+            temp = temp.next_node
+        return ('\n'.join(values))
