@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 import math
 'print(__import__("my_module").my_function.__doc__)'
 
