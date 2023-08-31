@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
 import math
-'print(__import__("my_module").my_function.__doc__)'
 
 
 class MagicClass:
-    'print(__import__("my_module").my_function.__doc__)'
 
     def __init__(self, radius=0):
         self.__radius = 0
