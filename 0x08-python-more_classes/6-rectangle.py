@@ -9,7 +9,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize a Rectangle."""
-        self.number_of_rec += 1
+        type(self).number_of_rec += 1
         self.width = width
         self.height = height
 
@@ -73,5 +73,5 @@ class Rectangle:
 
     def __del__(self):
         """deletion of a Rectangle."""
-        self.number_of_rec -= 1
+        type(self).number_of_rec -= 1
         print("Bye rectangle...")
