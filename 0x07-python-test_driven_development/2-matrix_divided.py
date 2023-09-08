@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-'''a function that adds 2 integers.'''
+'''function that divides all elements of a matrix.'''
 
 
 def matrix_divided(matrix, div):
+    '''function that divides all elements of a matrix.'''
     if (not type(matrix) == list or matrix == [] or
             not all(type(row) == list for row in matrix) or
             not all((type(ele) == int or type(ele) == float)
