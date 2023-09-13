@@ -9,8 +9,8 @@ if __name__ == "__main__":
         __import__('6-load_from_json_file.py').load_from_json_file
 
     try:
-        text = load_from_json_file("add_item.json")
+        text = load_from_json_file("7-add_item.json")
     except FileNotFoundError:
         text = []
     text.extend(sys.argv[1:])
-    save_to_json_file(text, "add_item.json")
+    save_to_json_file(text, "7-add_item.json")
