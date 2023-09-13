@@ -8,4 +8,4 @@ def load_from_json_file(filename):
     using a JSON representation:
     '''
     with open(filename) as op_file:
-        json.load(op_file)
+        return json.load(op_file)
