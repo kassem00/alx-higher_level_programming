@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''1. write file'''
-import json
+import sys
 
 
 if __name__ == "__main__":
