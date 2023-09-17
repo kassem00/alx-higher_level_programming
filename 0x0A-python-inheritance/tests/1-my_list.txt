@@ -1,11 +1,9 @@
-=======================
-How to Use 1-my_list.py
-=======================
-
 class ``MyList`` that inherits from ``list``.
 
+=============
 Instantiation
 =============
+
 empty list:
 ::
 
