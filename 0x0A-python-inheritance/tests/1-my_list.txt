@@ -1,9 +1,11 @@
-class ``MyList`` that inherits from ``list``.
+=======================
+How to Use 1-my_list.py
+=======================
 
+class ``MyList`` that inherits from ``list``.
 =============
 Instantiation
 =============
-
 empty list:
 ::
 
@@ -78,7 +80,6 @@ a public instance method ``print_sorted(self)``.
     >>> my_list.print_sorted(1)
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 2 were given
-
 
 ::
 
