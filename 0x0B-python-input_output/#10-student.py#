@@ -14,4 +14,4 @@ class Student:
         if type(attrs) == list:
             if all(type(element) == str for element in attrs):
                 for i in attrs:
-                          return self.__dict__
+                          return self.__dict__        return self.__dict__
