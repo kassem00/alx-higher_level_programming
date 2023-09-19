@@ -4,7 +4,7 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    ''' square class module '''    
+    """square class module """
     def __init__(self, size, x=0, y=0, id=None):
         """
         Initialize a new square opject.
