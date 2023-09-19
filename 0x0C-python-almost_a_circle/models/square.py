@@ -10,8 +10,7 @@ class Square(Rectangle):
         Initialize a new square opject.
 
         Args:
-            width (int): width of new square opject.
-            height (int): height of new square opject.
+            size (int): size of new square opject.
             x (int): Coordinat attribute.
             y (int): Coordinat attribute.
             id (int): id of new square opject.
@@ -20,5 +19,16 @@ class Square(Rectangle):
     
     
     def __str__(self):
-        '''[Square] (<id>) <x>/<y> - <size>'''
+        """[Square] (<id>) <x>/<y> - <size>"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}")
+
+    @property
+    def size(self):
+        """property of height"""
+        return self.height
+
+    @size.setter
+    def size(self, value):
+        """setter of height"""
+        self.width = value
+        self.height = value
