@@ -51,3 +51,13 @@ class Base:
                     dict_lis = []
                     dict_lis.append(ele.to_dictionary())
                     fp.write(Base.to_json_string(dict_lis))
+
+    def from_json_string(json_string):
+        """
+        save dict in beautiful maner list of the
+        JSON string representation
+        """
+        if json_string is None or json_string == "[]":
+            return []
+        else:
+            return json.loads(json_string)
