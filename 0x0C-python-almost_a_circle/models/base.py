@@ -26,7 +26,11 @@ class Base:
       else:
           self.id = id
     def to_json_string(list_dictionaries):
-        """standard formats for sharing data"""
+        """
+        standard formats for sharing data
+        Args:
+            list_dictionaries (list): dictionaries.
+        """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         else:
