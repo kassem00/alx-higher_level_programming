@@ -25,7 +25,7 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """
@@ -37,7 +37,7 @@ class Base:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """ save dict in beautiful maner """
@@ -48,6 +48,6 @@ class Base:
                 return
             else:
                 for ele in list_objs:
-                    dict_lis =[]
+                    dict_lis = []
                     dict_lis.append(ele.to_dictionary())
                     fp.write(Base.to_json_string(dict_lis))
