@@ -47,5 +47,6 @@ class Base:
                 return
             else:
                 for ele in list_objs:
-                    dict_lis = ele.to_dictionary()
+                    dict_lis =[]
+                    dict_lis.append(ele.to_dictionary())
                     fp.write(Base.to_json_string(dict_lis))
