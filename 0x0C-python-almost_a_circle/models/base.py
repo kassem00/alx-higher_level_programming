@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 ''' Base class module '''
+import json
 
 
 class Base:
@@ -24,3 +25,9 @@ class Base:
           self.id = Base.__nb_objects
       else:
           self.id = id
+    def to_json_string(list_dictionaries):
+        '''standard formats for sharing data'''
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
