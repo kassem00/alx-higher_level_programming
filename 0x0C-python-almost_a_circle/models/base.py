@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 ''' Base class module '''
 import json
-
+import csv
 
 class Base:
     """
@@ -78,7 +78,7 @@ class Base:
     def load_from_file(cls):
         """
         returns a list of instances
-        filename must be: <Class name>.json
+        fp must be: <Class name>.json
         """
         fp = str(cls.__name__) + ".json"
         try:
@@ -88,5 +88,49 @@ class Base:
                 for d in list_dicts:
                     temp.append(cls.create(**d))
                 return temp
+        except FileNotFoundError:
+            return []
+
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """save data to csv file.
+        Args:
+            list_objs (list): A list ofopjects.
+        """
+        fp = cls.__name__ + ".csv"
+        with open(fp, "w", newline="") as fp_csv:
+            if list_objs is None or list_objs == []:
+                fp_csv.write("[]")
+            else:
+                if cls.__name__ == "Rectangle":
+                    writer = csv.DictWriter(fp_csv, fieldnames=["id", "width", "height", "x", "y"])
+                if cls.__name__ == "Square":
+                    writer = csv.DictWriter(fp_csv, fieldnames=["id", "size", "x", "y"])
+                for objects in list_objs:
+                    writer.writerow(objects.to_dictionary())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """class method read data from a CSV file."""
+        fp = cls.__name__ + ".csv"
+        try:
+            with open(fp, "r", newline="") as fp_csv:
+                if cls.__name__ == "Rectangle":
+                    list_dicts = csv.DictReader(fp_csv, fieldnames= ["id", "width", "height", "x", "y"])
+                if cls.__name__ == "Square":
+                    list_dicts = csv.DictReader(fp_csv, fieldnames= ["id", "size", "x", "y"])
+                list_dicts = []
+                for d in list_dicts:
+                    new_dict = {}
+                    for k, v in d.items():
+                        new_dict[k] = int(v)
+                    list_dicts.append(new_dict)
+
+                result = []
+                for d in list_dicts:
+                    obj = cls.create(**d)
+                    result.append(obj)
+                return result        
         except FileNotFoundError:
             return []
