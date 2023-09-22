@@ -52,6 +52,7 @@ class Base:
                     dict_lis.append(ele.to_dictionary())
                     fp.write(Base.to_json_string(dict_lis))
 
+    @staticmethod
     def from_json_string(json_string):
         """
         save dict in beautiful maner list of the
@@ -72,3 +73,20 @@ class Base:
                 dummy = cls(1)
             dummy.update(**dictionary)
             return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        returns a list of instances
+        filename must be: <Class name>.json
+        """
+        fp = str(cls.__name__) + ".json"
+        try:
+            with open(fp, "r") as fjson:
+                list_dicts = Base.from_json_string(fjson.read())
+                temp = []
+                for d in list_dicts:
+                    temp.append(cls.create(**d))
+                return temp
+        except FileNotFoundError:
+            return []
