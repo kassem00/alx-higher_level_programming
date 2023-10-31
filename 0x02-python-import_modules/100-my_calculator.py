@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
     import calculator_1
     from sys import argv
@@ -18,4 +19,4 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     else:
-        print("{} {} {} = {}".format(num1, op, num2, opr[op](num1, num2)))
+        print("{} {} {} = {}".format(args[1] , op, args[3], opr[op](num1, num2)))
