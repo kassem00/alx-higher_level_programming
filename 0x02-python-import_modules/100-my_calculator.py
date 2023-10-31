@@ -13,9 +13,9 @@ if __name__ == "__main__":
     num1, num2 = int(args[1]), int(args[3])
     opr = {"+": cal.add, "-": cal.sub, "*": cal.mul, "/": cal.div}
     op = args[2]
-    
+
     if op not in list(opr.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     else:
-        print("{} {} {} = {}".format(args[1] , op, args[3], opr[op](num1, num2)))
+        print("{} {} {} = {}".format(num1, op, num2, opr[op](num1, num2)))
