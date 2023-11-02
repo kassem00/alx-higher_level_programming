@@ -27,7 +27,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """set the width of the rectangle"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         else:
             if value < 0:
@@ -37,7 +37,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """set the height of the rectangle"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -76,4 +76,3 @@ class Rectangle:
         """deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-

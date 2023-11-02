@@ -27,7 +27,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """set the width of the rectangle"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         else:
             if value < 0:
@@ -37,7 +37,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """set the height of the rectangle"""
-        if type(value) != int:
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -80,9 +80,9 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area"""
-        if type(rect_1) != Rectangle:
+        if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) != Rectangle:
+        if type(rect_2) is not Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1.area() >= rect_2.area():
             return (rect_1)
@@ -91,5 +91,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """that returns a new Rectangle instance with width == height == size"""
+        """that returns a new Rectangle instance with width = height = size"""
         return (cls(size, size))
