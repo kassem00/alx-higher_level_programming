@@ -141,4 +141,3 @@ class Base:
 
     def draw(list_rectangles, list_squares):
         """opens a window and draws all the Rectangles and Squares"""
-        
