@@ -1,2 +1,2 @@
--- show table in database.
+-- show all rows in table in database.
 SELECT * FROM `first_table`;
