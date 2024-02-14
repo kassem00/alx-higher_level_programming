@@ -1,3 +1,3 @@
 #!/usr/bin/node
-//script that prints
+// script that prints
 console.log('C is fun\nPython is cool\nJavascript is amazing');
