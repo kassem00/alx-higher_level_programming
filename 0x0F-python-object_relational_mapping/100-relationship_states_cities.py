@@ -19,7 +19,7 @@ def main():
 
     username, password, database = sys.argv[1], sys.argv[2], sys.argv[3]
 
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}"
                            .format(username, password, database),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
@@ -27,11 +27,11 @@ def main():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    new_state = State(name="California")
-    new_city = City(name="San Francisco", state=new_state)
+    california = State(name="California")
+    san_francisco = City(name="San Francisco", state=california)
 
-    session.add(new_state)
-    session.add(new_city)
+    session.add(california)
+    session.add(san_francisco)
 
     session.commit()
     session.close()
