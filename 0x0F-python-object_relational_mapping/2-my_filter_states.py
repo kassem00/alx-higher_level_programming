@@ -19,4 +19,4 @@ if __name__ == "__main__":
     BINARY\
     `name` = '{}'".format(sys.argv[4]))
     for state in c.fetchall():
-            print(state)
+        print(state)
