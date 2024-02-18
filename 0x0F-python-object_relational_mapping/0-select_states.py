@@ -6,7 +6,8 @@ import sys
 arg = sys.argv
 
 if __name__ == "__main__":
-    db=_mysql.connect("localhost", arg[1], arg[2], arg[3])
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM `states`")
-    [print(state) for state in c.fetchall()]
+    for state in c.fetchall():
+        print(state)
