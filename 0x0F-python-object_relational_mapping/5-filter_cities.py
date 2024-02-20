@@ -10,14 +10,11 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
 
-    c.execute("SELECT `c`.`id`, `c`.`name`, `s`.`name` \
-                 FROM `cities` as `c` \
-                INNER JOIN `states` as `s` \
-                   ON `c`.`state_id` = `s`.`id` \
-                ORDER BY `c`.`id`")
+    query = "SELECT name FROM cities WHERE state_id=(SELECT id FROM states WHERE name=%s LIMIT 1)"
+    c.execute(query, (sys.argv[4],))
 
-    result = []
-    for city in c.fetchall():
-        if city[4] == sys.argv[4]:
-            result.append(city[2])
-            print(", ".join(result))
+    cities = [city[0] for city in c.fetchall()]
+    print(", ".join(cities))
+
+    c.close()
+    db.close()
