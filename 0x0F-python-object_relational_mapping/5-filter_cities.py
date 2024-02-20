@@ -15,11 +15,9 @@ if __name__ == "__main__":
                 INNER JOIN `states` as `s` \
                    ON `c`.`state_id` = `s`.`id` \
                 ORDER BY `c`.`id`")
-    try:
-        search = sys.argv[4] + " " + sys.argv[5]
-    except IndexError:
-        search = sys.argv[4]
 
+    result = []
     for city in c.fetchall():
-        if search in city:
-            print(city)
+        if city[4] == sys.argv[4]:
+            result.append(city[2])
+            print(", ".join(result))
