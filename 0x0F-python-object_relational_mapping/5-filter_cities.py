@@ -19,7 +19,7 @@ if __name__ == "__main__":
         search = sys.argv[4] + " " + sys.argv[5]
     except IndexError:
         search = sys.argv[4]
-    print(search)
+
     for city in c.fetchall():
         if search in city:
             print(city)
