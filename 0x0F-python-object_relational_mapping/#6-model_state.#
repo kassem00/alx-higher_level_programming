@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+"""
+script that lists all states name start with N
+from the database hbtn_0e_0_usa
+"""
+import SQLAlchemy
+import sys
