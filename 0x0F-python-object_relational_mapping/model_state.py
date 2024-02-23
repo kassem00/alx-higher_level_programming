@@ -3,9 +3,14 @@
 contains the class definition of a State and an instance 
 Base = declarative_base():
 """
+from sqlalchemy import create_engine, String, Column, Integer, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 import sys
-from model_state import Base, State
-from sqlalchemy import (create_engine)
+import time
+
+Base = declarative_base()
+
 
 class State(Base):
     """inherits from Base Tips
