@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the class definition of a State and an instance 
+contains the class definition of a State and an instance
 Base = declarative_base():
 """
 from sqlalchemy import create_engine, String, Column, Integer, ForeignKey
@@ -13,9 +13,10 @@ Base = declarative_base()
 
 
 class State(Base):
-    """inherits from Base Tips
-    links to the MySQL table states 
+    """
+    inherits from Base Tips
+    links to the MySQL table states
     """
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String(128), nullable=False) 
+    name = Column(String(128), nullable=False)
