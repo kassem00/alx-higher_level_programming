@@ -18,6 +18,8 @@ if __name__ == "__main__":
     session = Session()
     st = session.query(State)
     state = st.filter(State.name.like(sys.argv[4])).order_by(State.id).all()
+    if len(state) == 0:
+        print("Not found")
 
     for r in state:
-        print(f"{r.id}")
+            print(f"{r.id}")
