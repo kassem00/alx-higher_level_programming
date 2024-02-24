@@ -13,8 +13,8 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-
-    states_to_delete = session.query(State).filter(State.name.like("%a%")).all()
+    qu = session.query(State)
+    states_to_delete = qu.filter(State.name.like("%a%")).all()
 
     for state in states_to_delete:
         session.delete(state)
