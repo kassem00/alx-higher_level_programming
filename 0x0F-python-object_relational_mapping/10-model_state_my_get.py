@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print("Not found")
 
     for r in state:
-            print(f"{r.id}")
+        print(f"{r.id}")
