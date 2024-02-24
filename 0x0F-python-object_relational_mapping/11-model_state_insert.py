@@ -9,7 +9,6 @@ import sys
 from relationship_state import State
 from relationship_city import Base, City
 
-def create_state_city(username, password, database_name):
 
 if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
@@ -18,6 +17,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
+
     new_state = State(name="Louisiana")
     session.add(new_state)
     session.commit()
