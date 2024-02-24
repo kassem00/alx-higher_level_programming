@@ -16,8 +16,8 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter(State.name.like("%a%")).order_by(State.id).all()
+    st = session.query(State)
+    state = st.filter(State.name.like("%a%")).order_by(State.id).all()
 
-    
-#    result = s.query(Person).filter(Person.firstname.like("%a%m"))
-    for r in state: print(f"{r.id}: {r.name}")
+    for r in state:
+        print(f"{r.id}: {r.name}")
