@@ -1,0 +1,264 @@
+Xsession: X session started for ka at 29 فبر, 2024 UTC 05:21:31 م
+WARNING: tempfile is deprecated; consider using mktemp instead.
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/ka/.Xauthority
+localuser:ka being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting USER=ka
+dbus-update-activation-environment: setting LC_TIME=ar_EG.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/ka
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting LC_MONETARY=ar_EG.UTF-8
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LOGNAME=ka
+dbus-update-activation-environment: setting GTK_IM_MODULE=ibus
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting LC_ADDRESS=ar_EG.UTF-8
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LC_TELEPHONE=ar_EG.UTF-8
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting XAUTHORITY=/home/ka/.Xauthority
+dbus-update-activation-environment: setting XMODIFIERS=@im=ibus
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/ka
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting LC_NAME=ar_EG.UTF-8
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LC_MEASUREMENT=ar_EG.UTF-8
+dbus-update-activation-environment: setting LC_IDENTIFICATION=ar_EG.UTF-8
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting QT_IM_MODULE=ibus
+dbus-update-activation-environment: setting PWD=/home/ka
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting CLUTTER_IM_MODULE=ibus
+dbus-update-activation-environment: setting LC_NUMERIC=ar_EG.UTF-8
+dbus-update-activation-environment: setting LC_PAPER=ar_EG.UTF-8
+/usr/bin/x-session-manager: X server already running on display :0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+xfce4-session-Message: 17:21:38.106: SSH authentication agent is already running
+gpg-agent: a gpg-agent is already running - not starting a new one
+Tracker-Message: 17:21:41.680: Set scheduler policy to SCHED_IDLE
+Tracker-Message: 17:21:41.681: Setting priority nice level to 19
+
+** (xfce4-power-manager:2108): WARNING **: 17:21:41.810: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
+
+
+** (xfce4-power-manager:2108): WARNING **: 17:21:41.812: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
+
+
+(tracker-extract:2112): Tracker-CRITICAL **: 17:21:41.988: Could not request DBus name 'org.freedesktop.Tracker1.Miner.Extract': D-Bus service name:'org.freedesktop.Tracker1.Miner.Extract' is already taken, perhaps the application is already running?
+Tracker-Message: 17:21:42.159: Set scheduler policy to SCHED_IDLE
+Tracker-Message: 17:21:42.159: Setting priority nice level to 19
+
+(tracker-miner-fs:2187): Tracker-CRITICAL **: 17:21:42.327: Could not request DBus name 'org.freedesktop.Tracker1.Miner.Files': D-Bus service name:'org.freedesktop.Tracker1.Miner.Files' is already taken, perhaps the application is already running?
+
+(xfce4-power-manager:2108): GLib-GObject-CRITICAL **: 17:21:42.359: ../../../gobject/gsignal.c:2625: signal 'Changed' is invalid for instance '0x5629329738c0' of type 'GDBusProxy'
+
+(xfce4-power-manager:2108): xfce4-power-manager-WARNING **: 17:21:42.375: could not map keysym 1008ffa8 to keycode
+
+
+** (xfce4-power-manager:2108): WARNING **: 17:21:42.380: No outputs have backlight property
+
+(xfce4-power-manager:2108): xfce4-power-manager-WARNING **: 17:21:42.468: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Object does not exist at path “/org/freedesktop/UPower/KbdBacklight”
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:42.712: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:42.766: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:43.059: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:43.335: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:43.600: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:43.947: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:44.020: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:44.138: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2067): garcon-CRITICAL **: 17:21:44.189: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+** (wrapper-2.0:2122): WARNING **: 17:21:44.492: No outputs have backlight property
+
+(wrapper-2.0:2127): GLib-GIO-CRITICAL **: 17:21:44.801: g_file_new_for_path: assertion 'path != NULL' failed
+
+(wrapper-2.0:2127): GLib-GIO-CRITICAL **: 17:21:44.801: g_file_monitor_file: assertion 'G_IS_FILE (file)' failed
+
+(wrapper-2.0:2127): GLib-GObject-CRITICAL **: 17:21:44.801: invalid (NULL) pointer instance
+
+(wrapper-2.0:2127): GLib-GObject-CRITICAL **: 17:21:44.801: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(wrapper-2.0:2127): Gtk-WARNING **: 17:21:44.801: Attempting to add a widget with type GtkToggleButton to a container of type XfcePanelPlugin, but the widget is already inside a container of type XfcePanelPlugin, please remove the widget from its existing container first.
+
+(wrapper-2.0:2131): Gtk-WARNING **: 17:21:45.203: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PulseaudioButton)
+
+(wrapper-2.0:2198): Gtk-WARNING **: 17:21:45.203: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner XfceArrowButton)
+
+(wrapper-2.0:2127): Gtk-WARNING **: 17:21:45.236: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:2122): Gtk-WARNING **: 17:21:45.289: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PowerManagerButton)
+[ main ] loading...
+[ main ] 11.0.6 5.10.0-27-amd64
+[ main ] Loading config...
+[ main ] Creating folders
+[ main ] starting monitoring...
+[ main ] Init app
+[ main ] Loading fonts
+en
+[ main ] Loading language en
+[ main ] Context initialized
+[ Thread-4 ] instance starting...
+[ Thread-4 ] instance started.
+[ Thread-4 ] Lock acquired...
+checking for app update
+[ Thread-3 ] manifest download response: 200
+7.2.11 7.2.11
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:192.168.1.12")
+[2391:2391:0229/172214.060422:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.
+[2391:2458:0229/172216.407169:ERROR:login_database.cc(1048)] Password decryption failed, encryption_result is 2
+libva error: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+[2391:2444:0229/172246.241937:ERROR:login_database.cc(1048)] Password decryption failed, encryption_result is 2
+[2391:2444:0229/172246.242370:ERROR:login_database.cc(1048)] Password decryption failed, encryption_result is 2
+[2464:2468:0229/172347.055177:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+Warning: Vulkan 1.1 or Vulkan 1.0 with KHR_Maintenance2 required.
+ - While initializing adapter (backend=BackendType::Vulkan)
+    at InitializeImpl (../../third_party/dawn/src/dawn/native/vulkan/PhysicalDeviceVk.cpp:166)
+    at Initialize (../../third_party/dawn/src/dawn/native/PhysicalDevice.cpp:48)
+
+Warning: eglChooseConfig returned zero configs
+    at Create (../../third_party/dawn/src/dawn/native/opengl/ContextEGL.cpp:65)
+    at Create (../../third_party/dawn/src/dawn/native/opengl/PhysicalDeviceGL.cpp:110)
+
+libpng warning: iCCP: known incorrect sRGB profile
+Fontconfig error: Cannot load default config file
+Fontconfig error: Cannot load default config file
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+kdeconnect.plugin.battery: No Primary Battery detected on this system. This may be a bug.
+kdeconnect.plugin.battery: Total quantity of batteries found:  0
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+Fontconfig error: Cannot load default config file
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[2464:2468:0229/173923.814811:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173923.821093:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173923.822923:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173924.093137:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173929.979479:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173930.341604:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/173933.187853:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+[2464:2468:0229/174047.191753:ERROR:ssl_client_socket_impl.cc(975)] handshake failed; returned -1, SSL error code 1, net_error -101
+Fontconfig error: Cannot load default config file
+kdeconnect.core: error when opening the input to upload
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:28.865: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.503: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.503: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.952: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:29.986: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:30.019: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.175: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.344: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.344: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.344: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.344: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.344: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:51:31.345: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: GFileInfo created without standard::is-hidden
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: file ../../../gio/gfileinfo.c: line 1633 (g_file_info_get_is_hidden): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: GFileInfo created without standard::is-backup
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: file ../../../gio/gfileinfo.c: line 1655 (g_file_info_get_is_backup): should not be reached
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: GFileInfo created without standard::is-symlink
+
+(Thunar:2072): GLib-GIO-CRITICAL **: 17:52:09.836: file ../../../gio/gfileinfo.c: line 1677 (g_file_info_get_is_symlink): should not be reached
