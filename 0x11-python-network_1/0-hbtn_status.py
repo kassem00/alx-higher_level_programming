@@ -6,8 +6,9 @@ from urllib import request
 
 if __name__ == "__main__":
     req = request
+    fetch = req.Request("https://alx-intranet.hbtn.io/status")
 
-    with req.urlopen("https://alx-intranet.hbtn.io/status") as resp:
+    with req.urlopen(fetch) as resp:
         data = resp.read()
 
     print("Body response:")
