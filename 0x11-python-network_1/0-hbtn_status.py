@@ -2,15 +2,15 @@
 """
 Python script that fetches https://alx-intranet.hbtn.io/status
 """
-from urllib import request
+
+import urllib.request
 
 if __name__ == "__main__":
-    req = request
-    fetch = req.Request("https://alx-intranet.hbtn.io/status")
-
-    with req.urlopen(fetch) as resp:
-        data = resp.read()
-
+    url = "https://alx-intranet.hbtn.io/status"
+    
+    with urllib.request.urlopen(url) as response:
+        data = response.read()
+        
     print("Body response:")
     print(f"    - type: {type(data)}")
     print(f"    - content: {data}")
