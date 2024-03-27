@@ -4,8 +4,7 @@
 const fs = require('fs').promises;
 const filename = process.argv[2];
 
-
-async function readFile() {
+async function readFile () {
   try {
     const data = await fs.readFile(filename, { encoding: 'utf8' });
     console.log(data); // Log the file content
