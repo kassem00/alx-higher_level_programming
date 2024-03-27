@@ -2,7 +2,7 @@
 // read file
 const fs = require('fs').promises;
 
-async function readFile() {
+async function readFile () {
   const argument = process.argv[2];
 
   try {
