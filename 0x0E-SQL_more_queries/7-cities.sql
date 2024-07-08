@@ -1,6 +1,10 @@
--- Lists all shows in hbtn_0d_tvshows that have at least one genre linked.
-SELECT s.`title`, g.`genre_id`
-  FROM `tv_shows` AS s
-        INNER JOIN `tv_show_genres` AS g
-	ON s.`id` = g.`show_id`
- ORDER BY s.`title`, g.`genre_id`;
+-- Creates the database hbtn_0d_usa with the table cities.
+CREATE DATABASE IF NOT EXISTS `hbtn_0d_usa`;
+CREATE TABLE IF NOT EXISTS `hbtn_0d_usa`.`cities` (
+    PRIMARY KEY(`id`),
+    `id`       INT          NOT NULL AUTO_INCREMENT,
+    `state_id` INT          NOT NULL,
+    `name`     VARCHAR(256) NOT NULL,
+    FOREIGN KEY(`state_id`)
+    REFERENCES `hbtn_0d_usa`.`states`(`id`)
+);
