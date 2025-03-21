@@ -6,4 +6,4 @@ function add(a, b) {
 }
 
 
-export.add;
+module.exports = { add };
