@@ -18,10 +18,9 @@ request(url, (error, response, body) => {
     process.exit(1);
   }
 
-  characters = JSON.parse(body).characters;
+  const characters = JSON.parse(body).characters;
   for (let i = 0; i < characters.length; i++) {
-
-    let url = characters[i];
+    const url = characters[i];
 
     request(url, (error, response, body) => {
       if (error) {
@@ -36,5 +35,4 @@ request(url, (error, response, body) => {
     }
     );
   }
-
 });
