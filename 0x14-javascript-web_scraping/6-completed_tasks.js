@@ -1,14 +1,22 @@
 #!/usr/bin/node
 const request = require('request');
 
-request('https://jsonplaceholder.typicode.com/todos', function (error, response, body) {
+// Check if URL argument is provided
+if (process.argv.length < 3) {
+  console.error('Usage: ./6-completed_tasks.js <URL>');
+  process.exit(1);
+}
+
+const url = process.argv[2];
+
+request(url, (error, response, body) => {
   if (error) {
     console.error(`Error: ${error.message}`);
-    return;
+    process.exit(1);
   }
   if (response.statusCode !== 200) {
     console.error(`Failed with status code: ${response.statusCode}`);
-    return;
+    process.exit(1);
   }
 
   const todos = JSON.parse(body);
