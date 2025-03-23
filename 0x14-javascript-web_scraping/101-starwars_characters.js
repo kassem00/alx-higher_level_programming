@@ -2,37 +2,40 @@
 const request = require('request');
 
 if (process.argv.length < 3) {
-  console.error('Usage: ./100-starwars_characters.js <FILM ID>');
+  console.error('Usage: ./101-starwars_characters.js <FILM ID>');
   process.exit(1);
 }
 
-const url = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
+const movieId = process.argv[2];
+const url = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 
-request(url, (error, response, body) => {
-  if (error) {
-    console.error(`Error: ${error.message}`);
-    process.exit(1);
-  }
-  if (response.statusCode !== 200) {
-    console.error(`Failed with status code: ${response.statusCode}`);
-    process.exit(1);
-  }
-
-  const characters = JSON.parse(body).characters;
-  for (let i = 0; i < characters.length; i++) {
-    const url = characters[i];
-
+function fetchData (url) {
+  return new Promise((resolve, reject) => {
     request(url, (error, response, body) => {
       if (error) {
-        console.error(`Error: ${error.message}`);
-        process.exit(1);
+        reject(new Error(`Error: ${error.message}`)); // Reject with an Error object
+      } else if (response.statusCode !== 200) {
+        reject(new Error(`Failed with status code: ${response.statusCode}`)); // Reject with an Error object
+      } else {
+        resolve(JSON.parse(body));
       }
-      if (response.statusCode !== 200) {
-        console.error(`Failed with status code: ${response.statusCode}`);
-        process.exit(1);
-      }
-      console.log(JSON.parse(body).name);
+    });
+  });
+}
+
+async function printCharacters () {
+  try {
+    const movieData = await fetchData(url);
+    const charactersUrls = movieData.characters;
+
+    for (const characterUrl of charactersUrls) {
+      const characterData = await fetchData(characterUrl);
+      console.log(characterData.name);
     }
-    );
+  } catch (error) {
+    console.error(error.message); // Log the error message
+    process.exit(1);
   }
-});
+}
+
+printCharacters();
